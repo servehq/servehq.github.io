@@ -9,18 +9,14 @@
     <meta name="description" content="Serve">
     <script>
         function closeWindow() {
-            // var window1 = open(location, '_self');
-            // setTimeout(function() {
-            //     window1.close();
-            // }, 1000);
-            // document.location.href = "fb://user/serve.rest"
-            window.history.back();
-            // window.location.assign("back://fb-messenger://user/serve.rest");
+            var mywindow = window.open('http://m.me/serve.rest', '_self');
+            mywindow.close();
         }
     </script>
 </head>
 
 <body>
+    <button onclick="closeWindow()">Cloes me!!!</button> <br>
     <a href="http://m.me/serve.rest">בדיקה חדשה</a>
     <a href="fb-messanger://cancel">vבדיקה חדשה1 </a>
     <a href="fb-messanger://user/1729984930559724">בדיקה עם מספר</a><br>
