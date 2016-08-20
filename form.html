@@ -9,7 +9,11 @@
     <meta name="description" content="Serve">
     <script>
         function closeWindow() {
-            window.location.assign("back://fb-messenger://user/serve.rest");
+            var window1 = open(location, '_self');
+            setTimeout(function() {
+                window1.close();
+            }, 1000);
+            // window.location.assign("back://fb-messenger://user/serve.rest");
         }
     </script>
 </head>
