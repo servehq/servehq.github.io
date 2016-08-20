@@ -9,8 +9,7 @@
     <meta name="description" content="Serve">
     <script>
         function closeWindow() {
-            // self.close();
-            setTimeout(window.close, 1000);
+            window.location.assign("back://" + window.location);
         }
     </script>
 </head>
